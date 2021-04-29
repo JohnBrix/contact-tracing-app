@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Contact Tracing App</string>
+    <string name="title_activity_dashboard">DashboardActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name = "official_appname">SAFE KA DITO</string>
+    <string name = "sign_in">Please Sign-in to continue</string>
+    <string name = "welcome">Login</string>
+    <string name = "username">Username</string>
+    <string name = "password">Password</string>
+    <string name = "forgot">Forgot Your Password?</string>
+    <string name = "login">Login</string>
+    <string name = "notRegister">Dont have account yet?</string>
+    <string name="signup">Sign-up</string>
+</resources>
