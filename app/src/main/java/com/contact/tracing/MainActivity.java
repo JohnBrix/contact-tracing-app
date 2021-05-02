@@ -9,6 +9,7 @@ import android.os.Bundle;
 
 import com.contact.tracing.fragment.LoginFragment;
 import com.contact.tracing.fragment.RegisterFragment;
+import com.contact.tracing.fragment.authenticateadapter.AuthenticationPagerAdapter;
 
 import java.util.ArrayList;
 
@@ -22,31 +23,10 @@ public class MainActivity extends AppCompatActivity {
         ViewPager viewPager = findViewById(R.id.viewPager);
 
         AuthenticationPagerAdapter pagerAdapter = new AuthenticationPagerAdapter(getSupportFragmentManager());
-        pagerAdapter.addFragmet(new LoginFragment());
-        pagerAdapter.addFragmet(new RegisterFragment());
+        pagerAdapter.addFragment(new LoginFragment());
+        pagerAdapter.addFragment(new RegisterFragment());
         viewPager.setAdapter(pagerAdapter);
     }
 
-    class AuthenticationPagerAdapter extends FragmentPagerAdapter {
-        private ArrayList<Fragment> fragmentList = new ArrayList<>();
 
-        public AuthenticationPagerAdapter(FragmentManager supportFragmentManager) {
-            super(supportFragmentManager);
-        }
-
-
-        @Override
-        public Fragment getItem(int i) {
-            return fragmentList.get(i);
-        }
-
-        @Override
-        public int getCount() {
-            return fragmentList.size();
-        }
-
-        void addFragmet(Fragment fragment) {
-            fragmentList.add(fragment);
-        }
-    }
 }

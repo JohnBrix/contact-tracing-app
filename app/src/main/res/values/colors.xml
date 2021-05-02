@@ -7,6 +7,7 @@
     <color name="superDark">#000000</color>
     <color name="lightGray">#372e4a</color>
     <color name="lightTextFieldColor">#57506a</color>
+    <color name = "labels_colors">#464055</color>
     <color name="button_color">#0cecda</color>
     <color name="textfield_active">#372e4a</color>
     <color name="transparentColor">#00000000</color>
